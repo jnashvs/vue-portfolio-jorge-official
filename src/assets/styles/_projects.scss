@@ -1,0 +1,64 @@
+.componentheader {
+  padding-bottom: 60px !important;
+}
+
+.projects-components {
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+
+.project-card__img {
+  background-color: #fbfbfb;
+  padding: 15px;
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.tags {
+  color: #007bff;
+}
+
+.project-card {
+  -webkit-box-shadow: 0 6px 15px 0 rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0 6px 15px 0 rgba(0, 0, 0, 0.15);
+  box-shadow: 0 6px 15px 0 rgba(0, 0, 0, 0.15);
+
+  //first - 0px 0px 19px 6px rgba(224,224,224,1);
+  //box-shadow: 0 6px 15px 0 rgba(0,0,0,0.15);
+}
+
+.project-card__info {
+  padding: 15px;
+
+  ul li {
+    list-style: none;
+    text-align: center;
+    display: inline-block;
+    margin: 5px;
+    padding: 10px;
+    font-size: 0.8rem;
+
+    -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.14);
+    -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.14);
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.14);
+  }
+
+  a {
+    text-align: right;
+    float: right;
+  }
+}
+
+/****** pop over */
+
+div[data-popover="foo"] {
+  background: #444;
+  color: #f9f9f9;
+
+  font-size: 12px;
+  line-height: 1.5;
+  margin: 5px;
+}

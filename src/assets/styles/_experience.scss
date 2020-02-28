@@ -1,0 +1,93 @@
+.container.experiences{
+    margin-bottom: 80px;
+}
+
+.place_job{
+    color: rgba(79, 118, 167, 0.95);
+}
+
+.jobs-item{
+    border-left: 2px solid rgba(79, 118, 167, 0.95);
+    padding-left: 25px;
+    padding-bottom: 30px;
+}
+
+.jobs-item:before {
+    width: 12px;
+    height: 12px;
+    border: 2px solid rgba(79, 118, 167, 0.95);
+    position: absolute;
+    content: "";
+    border-radius: 50%;
+    background-color: #fff;
+    left: 10px;
+}
+
+.jobs{
+    margin: 8px;
+}
+
+p.date_job{
+    font-size: 80%;
+    font-weight: 400;
+}
+
+p span .active{
+    color: rgb(240, 240, 12);
+}
+
+p span .inactive{
+    color: rgb(218, 218, 215) !important;
+}
+
+p span .fa-star{
+    margin-right: 3px;
+}
+
+p .ability-stars{
+    float: right;
+}
+
+.list_abilities li{
+    list-style: none;
+}
+
+.row-abilities{
+    margin-bottom: 10px;
+}
+
+.tools_used small{
+    text-align: center;
+}
+
+.tools_used .col-md-2, .col-sm-4{
+    text-align: center;
+}
+
+.tools_used img{
+    width: 64px;
+    height: auto;
+}
+
+@media (min-width: 576px){
+    
+.row-abilities{
+ padding-bottom: 20px;
+}
+
+.list_abilities{
+    margin-left: 2.5rem !important;
+}
+
+}
+
+@media (max-width: 576px){
+
+    .tools_used_img{
+        margin-left: 15px;
+    }
+    .col-sm-4{
+    width: auto !important;
+}
+
+}

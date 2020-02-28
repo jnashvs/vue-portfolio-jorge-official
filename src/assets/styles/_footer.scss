@@ -1,0 +1,39 @@
+footer{
+
+    h3{
+        font-size: 1.15rem;
+        margin-bottom: 0.5rem;
+        font-weight: 300;
+        line-height: 1.2;
+    }
+
+    h4{
+        margin-bottom: 0.5rem;
+    font-weight: 200 !important;
+    line-height: 1.2;
+    }
+
+    .btn-circle {
+        color: #f1f1f1;
+        margin: 5px;
+    }
+
+    .gmail{
+        background-color: #d93025 !important;
+    }
+
+    .lastline{
+        padding: 25px;
+        border-top: 0.6px solid #555 !important;
+    }
+
+    margin-top: -35px;
+    padding-top: 40px;
+    background-color: #f1f1f1;
+    @media (min-width: 576px){
+    padding-top: 60px;
+    margin-top: -70px;
+    clip-path: polygon(1 30%, 100% 0, 100% 100%, 0 100%, 0 0);
+    }
+    
+}
