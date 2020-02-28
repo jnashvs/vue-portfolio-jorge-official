@@ -35,7 +35,6 @@
             <!-- popover -->
             <li
               class="popoverData"
-              href="#"
               v-for="(tag, index) in project.tags"
               :key="index"
               v-bind:data-content="event(tag)"
