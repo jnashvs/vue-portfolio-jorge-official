@@ -32,7 +32,6 @@
           <p class="project-card__stack px-4">Used stack:</p>
 
           <ul class="tags">
-            <!-- popover -->
             <li
               class="popoverData"
               v-for="(tag, index) in project.tags"
@@ -45,7 +44,6 @@
             >
               {{ tag }}
             </li>
-            <!-- fim popover -->
           </ul>
           <a v-bind:href="project.link" class="project-card__link p-4">{{
             project.link
