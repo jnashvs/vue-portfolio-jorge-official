@@ -12,6 +12,8 @@ import "./assets/app.js";
 //************ importa td componentes k nta bai usa ************* */
 Vue.component("Navbar", require("./components/Layouts/Navbar.vue").default);
 Vue.component("Footer", require("./components/Layouts/Footer.vue").default);
+Vue.component("modal", require("./components/_modal.vue").default);
+
 
 /********** pop over component */
 

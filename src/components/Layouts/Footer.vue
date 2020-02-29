@@ -3,7 +3,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-12 text-center">
-                    <h3>THANKZ!</h3>
+                    <h3>THANKS!</h3>
                     <br>
                     <h4>
                         I'm available for work, get in touch

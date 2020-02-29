@@ -13,6 +13,7 @@
           </p>
         </div>
       </div>
+      
       <div
         class="row project-card m-1 my-4"
         data-toggle="modal"
@@ -22,7 +23,11 @@
         :key="index"
       >
         <div class="col-md-6 col-lg-5 col-sm-12 project-card__img">
-          <img class v-bind:src="project.img" alt="project-img" />
+
+          <img class v-bind:src="project.img" alt="project-img" @click="modalopen(project.id)"/>
+
+          <modal :id="project.id" :title="project.title" :img="project.img" :description="project.description"> </modal>
+          
         </div>
         <div class="col-md-6 col-lg-7 col-sm-12 project-card__info mt-4">
           <h5 class="project-card__title px-4">{{ project.title }}</h5>
@@ -59,7 +64,6 @@ export default {
     name: 'Projects',
     props: [],
     mounted() {
-
 
         $('.popoverData').popover();
         $('#popoverOption').popover({ trigger: "hover", delay: { "show": 5000, "hide": 1000 } });
@@ -113,6 +117,10 @@ export default {
             });
 
             return xpto;
+        },
+
+        modalopen: function(id){
+                $('#modal'+id).modal('toggle');
         }
 
     },
