@@ -14,6 +14,7 @@
 
         <img class v-bind:src="img" alt="project-img"/>
           <p class="project-card__description text-justify p-4">
+
             {{ description }}
           </p>      </div>
 

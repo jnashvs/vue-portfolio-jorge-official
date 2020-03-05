@@ -26,13 +26,13 @@
 
           <img class v-bind:src="project.img" alt="project-img" @click="modalopen(project.id)"/>
 
-          <modal :id="project.id" :title="project.title" :img="project.img" :description="project.description"> </modal>
+          <modal :id="project.id" :title="project.title" :img="project.img" :description="project.resume"> </modal>
           
         </div>
         <div class="col-md-6 col-lg-7 col-sm-12 project-card__info mt-4">
           <h5 class="project-card__title px-4">{{ project.title }}</h5>
           <p class="project-card__description text-justify p-4">
-            {{ project.description }}
+            {{ project.resume }}
           </p>
           <p class="project-card__stack px-4">Used stack:</p>
 
@@ -78,7 +78,7 @@ export default {
                 id: 1,
                 img: 'https://www.bestcomputerscienceschools.net/wp-content/uploads/2017/07/best-online-masters-computer-science.jpg',
                 title: 'Bootstrap Framework',
-                description: 'Do answered bachelor occasion in of offended no concerns. Supply worthy warmth branch of no ye. Voice tried known to as my to. Though wished merits or be. Alone visit use these smart rooms ham.',
+                resume: 'Do answered bachelor occasion in of offended no concerns. Supply worthy warmth branch of no ye. Voice tried known to as my to. Though wished merits or be. Alone visit use these smart rooms ham.',
                 tags: ['html', 'css', 'javascript', 'vuejs'],
                 link: 'www.uniteltnais.cv',
             },
@@ -86,7 +86,7 @@ export default {
                 id: 2,
                 img: 'https://engineering.buffalo.edu/content/engineering/computer-science-engineering/undergraduate/degrees-and-programs/ba-in-computer-science/jcr:content/par/image.img.447.auto.jpg/1560278866579.jpg',
                 title: 'Project CV taxi praia',
-                description: 'As a freelance web developer and designer I collaborated with several graphic designers in Berlin and Melbourne, at the same time maintaining clients in Germany, Ireland, Australia and the UK. I have worked on a multitude of web and print based projects for a range of clients providing Web Design',
+                resume: 'As a freelance web developer and designer I collaborated with several graphic designers in Berlin and Melbourne, at the same time maintaining clients in Germany, Ireland, Australia and the UK. I have worked on a multitude of web and print based projects for a range of clients providing Web Design',
                 tags: ['material', 'css', 'sass', 'vuejs'],
                 link: 'www.cvmovel.cv',
             },
