@@ -57,6 +57,12 @@ export default {
         "navbar-collapse collapse"
       );
     }
+
+    // this.$store.dispatch('closer', function(){
+    //           console.log(this.$refs)
+    //           return false;
+    //         })
+
   }
 };
 </script>

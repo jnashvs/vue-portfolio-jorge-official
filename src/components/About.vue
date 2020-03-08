@@ -37,7 +37,7 @@
             <div class="row">
                 <div class="col-12 my-4 myresume">
                     <br>
-                    <div class="text-uppercase">
+                    <div class="text-uppercase text-info">
                         Resume about me
                     </div>
                     <br>
@@ -61,7 +61,7 @@
         <div class="jumbotron container-fluid experience_div">
             <div class="container">
                 <div class="row mt-0 mb-0">
-                    <div class="col-12 text-uppercase">
+                    <div class="col-12 text-uppercase text-info">
                         EDUCATION
                     </div>
                     <hr>

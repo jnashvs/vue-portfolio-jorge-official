@@ -5,7 +5,7 @@
             <div class="row">
     
                 <div class="col-12 my-4">
-                    <p class="text-uppercase">
+                    <p class="text-uppercase text-info">
                         employment
                     </p>
                 </div>
@@ -39,7 +39,7 @@
                 <br>
                 <div class="col-12 my-4">
     
-                    <p class="text-uppercase">
+                    <p class="text-uppercase text-info">
                         Skills
                     </p>
                 </div>
@@ -68,7 +68,7 @@
             <div class="row tools_used my-4">
     
                 <div class="col-12">
-                    <p class="text-uppercase">
+                    <p class="text-uppercase text-info">
                         tools i used to use
                     </p>
                 </div>

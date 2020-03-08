@@ -3,7 +3,7 @@
     <div class="container projects-components">
       <div class="row m-1">
         <div class="col-md-8 col-sm-12">
-          <p class="text-uppercase my-4">Give a check about my projects</p>
+          <p class="text-uppercase my-4 text-info">Give a check about my projects</p>
           <p class="justify-text">
             Above you can achieve some of my meaning projects, where i used
             different technology and modern web application aproach. Contrary to
