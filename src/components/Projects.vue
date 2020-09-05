@@ -1,8 +1,6 @@
 <template>
   <div class="componentheader pb-4">
 
-    <New :receive="projects" />
-
     <div class="container projects-components">
       <div class="row m-1">
         <div class="col-md-8 col-sm-12">
