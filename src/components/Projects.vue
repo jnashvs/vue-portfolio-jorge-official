@@ -1,5 +1,8 @@
 <template>
   <div class="componentheader pb-4">
+
+    <New :receive="projects" />
+
     <div class="container projects-components">
       <div class="row m-1">
         <div class="col-md-8 col-sm-12">
@@ -60,7 +63,13 @@
 </template>
 
 <script lang="js">
+import New from './New.vue';
+
 export default {
+  
+components: {
+        New
+    },
     name: 'Projects',
     props: [],
     mounted() {
