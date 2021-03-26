@@ -15,14 +15,9 @@
 
 <script lang="js">
 
-import New from './New.vue';
-
   export default  {
     name: 'src-components-contact',
     
-    components: {
-        New
-    },
     mounted () {
 
     },

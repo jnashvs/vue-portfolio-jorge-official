@@ -23,7 +23,7 @@
                 </div>
     
                 <div class="col-12 text-center lastline">
-                    <p>© 2020 Jorge Varela. All Rights Reserved</p>
+                    <p> {{currentYear}} - Jorge Varela.</p>
     
                 </div>
     
@@ -34,6 +34,15 @@
 
 <script>
 export default {
-    name: 'Footer'
+    name: 'Footer',
+    date(){
+        return {
+            currentYear: '',
+        }
+    },
+    created(){
+        var date = new Date();
+        this.currentYear = date.getFullYear();
+    }
 }
 </script>

@@ -1,6 +1,6 @@
 <template>
     <div>
-        <div class="main-header" style="">
+        <div class="main-header">
             <div class="container">
                 <div class="row personal-profile">
                     <div class="col-md-4 col-xs-12 col-sm-4 sm-4 personal-profile__avatar">
@@ -8,10 +8,10 @@
                     </div>
                     <div class="col-md-8 col-xs-12 col-sm-8 personal-profile__info">
                         <p class="personal-profile__name">Jorge Varela</p>
-                        <p class="personal-profile__work">fullstack developer, Slingshot</p>
+                        <p class="personal-profile__work">FullStack Web Developer, Slingshot</p>
                         <div class="personal-profile__contacts">
                             <dl class="contact-list contact-list__opacity-titles">
-                                <dt>Age: <span class="dd"> 23 </span> </dt>
+                                <dt>Age: <span class="dd"> {{age}} </span> </dt>
                                 <dt>Phone: <span class="dd"> <a href="tel:965613928">(+351) 965613928</a></span> </dt>
                                 <dt>Email: <span class="dd"> <a href="mailto:jnashvs@gmail.com">jnashvs@gmail.com</a></span> </dt>
                                 <dt>Address: <span class="dd">  Torres Vedras, 2885-805</span> </dt>
@@ -67,31 +67,31 @@
                     <hr>
                     <div class="col-12 my-4">
                         <div class="col-md-4">
-                            <p class="font-weight-bold experiences-tittle">Universidade</p>
+                            <p class="font-weight-bold experiences-tittle">Degree´s</p>
                         </div>
                         <div class="col-md-8">
                             <p>
-                                Licenciatura - Engenharia de Sistemas - Jean Piaget de Cabo Verde
-                                <br>
-                                <small class="text-right">2014 - 2018</small>
-                            </p>
-                            <p>
-                                Mestrado - Engenharia Informática - Universidade Trás os Montes e Alto Douro
+                                Master's Degree - Organizational Analytics and Intelligence - Polytechnic Institute of Tomar (Portugal)
                                 <br>
                                 <small class="text-right">2019 - Atual</small>
                             </p>
-    
+
+                            <p>
+                                Graduation - Systems and Informatics Engineering - University Jean Piaget of Cape Verd (Cape Verd)
+                                <br>
+                                <small class="text-right">2014 - 2018</small>
+                            </p>    
                         </div>
                     </div>
     
                     <div class="col-12">
                         <div class="col-md-4">
-                            <p class="font-weight-bold experiences-tittle">Secundária</p>
+                            <p class="font-weight-bold experiences-tittle">High School</p>
                         </div>
                         <div class="col-md-8">
-                            <p>Ensino secundária - Ciências e Tecnologia - Escola Secundária de Chão Bom
+                            <p>High School - Science and Technology - Escola Secundária de Chão Bom (Cape Verd)
                                 <br>
-                                <small class="text-right">2014 - 2018</small>
+                                <small class="text-right">2009 - 2014</small>
                             </p>
                         </div>
                     </div>
@@ -105,6 +105,28 @@
 <script>
 export default {
     name: 'About',
+    data(){
+        return {
+            age: '',
+        }
+    },
+    methods:{
+        getAge(dateString){
+            var today = new Date();
+            var birthDate = new Date(dateString);
+            var age = today.getFullYear() - birthDate.getFullYear();
+            var m = today.getMonth() - birthDate.getMonth();
+            if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) {
+                age--;
+            }
+
+            this.age = age;
+        }
+    }, 
+    created(){
+        this.getAge("1996/06/08");
+        console.log(`my age is: ${this.age}`);
+    }
 
 }
 </script>

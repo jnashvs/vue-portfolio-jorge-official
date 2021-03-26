@@ -14,7 +14,6 @@ import "./assets/app.js";
 Vue.component("Navbar", require("./components/Layouts/Navbar.vue").default);
 Vue.component("Footer", require("./components/Layouts/Footer.vue").default);
 Vue.component("modal", require("./components/_modal.vue").default);
-Vue.component("New", require("./components/New.vue").default);
 
 
 /********** pop over component */

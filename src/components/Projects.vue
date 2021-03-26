@@ -61,13 +61,9 @@
 </template>
 
 <script lang="js">
-import New from './New.vue';
 
 export default {
-  
-components: {
-        New
-    },
+
     name: 'Projects',
     props: [],
     mounted() {
