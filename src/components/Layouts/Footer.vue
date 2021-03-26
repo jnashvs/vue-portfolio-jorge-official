@@ -41,7 +41,7 @@ export default {
         }
     },
     created(){
-        var date = new Date();
+        var date = new Date(); 
         this.currentYear = date.getFullYear();
     }
 }
